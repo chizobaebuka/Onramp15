@@ -1,32 +1,116 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-/* div{
-    background-color: grey;
-    height: 800px;
-} */
-.aside-mainContent{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-} 
-.asideParentContainer{
-    background-color: grey;
-    height: 400px;
-    grid-column: 1 / 4;
-} 
-.mainContent{
-    background-color: aquamarine;
-    height: 400px;
-    grid-column: 4 / 13;
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: turquoise; */
 }
-.articleContainer .first{
-    width: 200px;
-    background-color: aqua;
+.content{
+    width: 80%;
+    height: 90%;
+    margin: 3% auto;
+    border: 1px solid red;
+}
+.upper{
+    width: 100%;
+    height: 90%;
+    border: 1px solid blue;
+}
+.lower{
+    width: 100%;
+    height: 9%;
+    border: 1px solid red;
+}
+.minor{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    row-gap: 13px;
+    column-gap: 20px;
+    width: 30%;
+    height: 100%;
+    float: left;
+    border: 1px solid red;
+}
+.major{
+    width: 69%;
+    height: 100%;
+    float: left;
+    border: 1px solid blueviolet;
+}
+.top-icon{
+    display: flex;
+    /* border: 1px solid orangered; */
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid blueviolet;
+    height: 30px;
+    border-radius: 50px;
+}
+.active .resolved{
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+}
+.homeNum{
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 0;
+    padding: 2px;
+}
+.home{
+    margin-left: 20px;
+    width: 35%;
+    float: left;
+}
+.home2{
+    width: 50%;
+    margin-top: 10px;
+    border-bottom: 1px solid black ;
+    float: left;
+}
+.second, .third, .fourth{
+    border: 1px solid red;
+    height: 21%;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.second{
+    margin-top: 2px;
+}
+.write-up{
     margin: 5px;
+    margin-top: 6px;   
+    margin-left: 15px;   
+    margin-right: 15px;   
 }
-footer{
-    background-color: palegreen;
-    height: 400px;
+.icons{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
 }
+.flex-num{
+    margin-left: 150px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid blue;
+    border-radius: 100%;
+}
+
