@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* div{
+    background-color: grey;
+    height: 800px;
+} */
+.aside-mainContent{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+} 
+.asideParentContainer{
+    background-color: black;
+    height: 400px;
+    grid-column: 1 / 3;
+} 
+.mainContent{
+    background-color: aquamarine;
+    height: 400px;
+    grid-column: 4 / 13;
+}
