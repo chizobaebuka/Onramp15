@@ -27,6 +27,31 @@
 // console.log(body2);
 
 
+// CREATING UL AND embedding li to the ul and then append the ul child to the body element;
+// const ul = document.createElement('ul');
+// const li = document.createElement('li');
+// const li2 = document.createElement('li');
+// const li3 = document.createElement('li');
 
+// li.innerText = "I am the first";
 
+// li2.innerText = "I am the second";
 
+// li3.innerText = " I am the third";
+
+// ul.appendChild(li);
+// ul.appendChild(li2);
+// ul.appendChild(li3);
+
+// body.appendChild(ul);
+
+// EVENTS
+
+const body = document.getElementById("container");
+const button = document.querySelector('.btn');
+
+button.addEventListener('click', turnThePageYellow);
+
+function turnThePageYellow() {
+    console.log("I have been clicked");
+}
