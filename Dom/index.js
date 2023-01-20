@@ -47,11 +47,17 @@
 
 // EVENTS
 
-const body = document.getElementById("container");
-const button = document.querySelector('.btn');
+const body = document.querySelector("#container");
+const button = document.querySelector('#btn');
+const header = document.querySelector('h1');
+// click & mouseover events
+button.addEventListener('click', turnEntirePageYellow);
+button.addEventListener('mouseover', turnHeaderToRed);
 
-button.addEventListener('click', turnThePageYellow);
+function turnEntirePageYellow() {
+    body.setAttribute("class", "yellow")
+}
 
-function turnThePageYellow() {
-    console.log("I have been clicked");
+function turnHeaderToRed() {
+    header.setAttribute("class", "red")
 }
