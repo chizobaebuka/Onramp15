@@ -11,7 +11,7 @@ function accum(str){
 
     for (let i =0; i < str.length; i++){
         const capital = str[i].toUpperCase();
-        const repeat = str[i].repeat(i);
+        const repeat = str[i].repeat(i).toLowerCase();
         const newStr = capital + repeat;
         newArr.push(newStr);
     }
