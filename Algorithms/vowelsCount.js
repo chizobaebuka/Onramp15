@@ -18,3 +18,18 @@ function vowelsCount(str){
 }
 let str = "I am a boy"
 getCount(str)
+
+
+// OR
+
+function vowelsCount(string){
+    let vowels = 'aeiou';
+    let count = 0;
+
+    for(let char of string){
+        if(vowels.includes(char)) count++;
+    }
+    return count;    
+}
+
+vowelsCount(string);
