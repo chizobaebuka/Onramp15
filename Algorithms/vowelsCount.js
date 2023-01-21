@@ -4,6 +4,7 @@
 
 // The input string will only consist of lower case letters and/or spaces.
 
+// to show vowels exits in the string excluding repetition
 function vowelsCount(str){
     const vowels = 'aeiou';
     const checked = [];
@@ -21,7 +22,7 @@ getCount(str)
 
 
 // OR
-
+// checking the vowel exits in the string repetition included
 function vowelsCount(string){
     let vowels = 'aeiou';
     let count = 0;
