@@ -78,4 +78,6 @@ function camelCase(s){
 
 function camelCase(s);
 
+// 6. 
+
 

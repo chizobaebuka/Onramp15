@@ -55,15 +55,20 @@ function highestCharacter(string) {
     let store = {};
     // Iterate through each character in the sentence
     for (let char of string) {
-      // If the character is already in the object, increment its count by 1
-      if (char in store) {
-        store[char]++;
-      }
-      // If the character is not in the object, add it with a count of 1
-      else {
-        store[char] = 1;
-      }
+        // declaring key to convert and trim the statement to lowercase and without spacing
+        let key = char.toLowerCase().trim();
+        // if the key is an empty string ("") continue
+        if (key === "") continue;
+        // If the character is already in the object, increment its count by 1
+        if (key in store) {
+        store[key]++;
+        }
+        // If the character is not in the object, add it with a count of 1
+        else {
+        store[key] = 1;
+        }
     }
+    
     // Find the character with the highest count
     let highestCount = Object.keys(store).reduce((a, b) => store[a] > store[b] ? a : b);
     return highestCount;
