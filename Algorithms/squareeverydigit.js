@@ -14,8 +14,9 @@ function squareDigits(num){
 
     for (let i=0; i<str.length;i++){
         result[i] = numStr[i] * numStr[i];
+        // result[i] = Math.pow(str[i], 2);
     }
     return Number(result.join(''));
 }
 
-squareDigits(5);
+squareDigits(num);
