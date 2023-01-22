@@ -44,19 +44,12 @@ function minimumBillCount(value, bills) {
 
 // OR
 
-function minimumBillCount(value, bills) {
-    // sort the bills array in descending order
-    bills.sort((a, b) => b - a);
-
-    let count = 0;
-    let i = 0;
-    while (value > 0) {
-        if (value >= bills[i]) {
-            count += Math.floor(value / bills[i]);
-            value = value % bills[i];
-        }
-        i++;
-    }
-    return count;
-}
+function minimumBillCount(value, availables){
+    let bills = 0
+    availables.sort((a,b) => b-a).forEach(bill => {
+      bills += Math.floor(value / bill)
+      value %= bill
+    })
+    return bills
+  }
 
