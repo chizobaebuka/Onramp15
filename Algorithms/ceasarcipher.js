@@ -78,3 +78,51 @@ function caesarCipher(s, k) {
 
 // OR
 
+function caesarCipher(s, k){
+    let result = "";
+    let alphabets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let letterToNumber = {};
+    let numberToLetter = {};
+
+    let num = 1;
+    for (char of alphabets){
+        letterToNumber[char] = num;
+        numberToLetter[num] = char;
+        num++;
+    }
+
+    // calculate the offset by getting the remainder of the rotation count divided by 26
+    let offset = k % 26;
+    let start;
+    let end;
+    let value;
+    for (let char of s){
+        // get the number for the character from our letterToNumber object
+        let num = letterToNumber[char];
+        if (!num){
+            // if the char is not defined in the letterToNumber object, because it is most likely a special character, just add it like that to the result
+            result += num;
+        } else{
+            // if the char is an uppercase character hence why the if condition below
+            if(char.toLowerCase() !== char){
+                start = 27;
+                end = 52;
+            } else {
+                // for lowercase characters
+                start = 1;
+                end = 27;
+            }
+
+            if (num + offset > end){
+                // if the sum of the num and the offset is greater than the end(26 for lowercase and 52 for uppercase)
+                // ensuring it between 1 and 52
+                value = numberToLetter[num + offset - 26];
+                result += value;
+            }else{
+                value = numberToLetter[num + offset];
+                result += value;
+            }
+        }
+    }
+    return result;
+}
