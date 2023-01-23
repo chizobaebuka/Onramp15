@@ -53,3 +53,21 @@ function minimumBillCount(value, availables){
     return bills
   }
 
+//   OR
+function minimumBillCount(value, numArr){
+    let bills = 0;
+    let newBalance = value;
+    let sortedArr = numArr.sort((a,b) => b-a );
+
+    for (let bill of sortedArr){
+        const remainder = newBalance % bill;
+        bills += (newBalance - remainder) / bill;
+
+        if(remainder === 0) break;
+        if(remainder > 0){
+            newBalance = remainder
+        }
+    }
+    return bills;
+}
+
