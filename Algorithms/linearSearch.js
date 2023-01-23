@@ -14,6 +14,9 @@ function findTarget(arr, target){
     return -1;
 }
 
+// OR
+const findTarget = (arr, target) => arr.indexOf(target);
+
 // in a case where the target or the array is not given the function would be as below
 function findTarget(arr, target){
     if (!target) return "please provide a target";
