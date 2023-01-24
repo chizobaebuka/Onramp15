@@ -21,8 +21,10 @@ function allSum (words, min){
 // OR
 
 function allSum(words, min) {
+    // if the length of the words is less than min, return 0
     if (words.length < min) {
       return 0;
     }
+    // you then return the sum of the words that are greater than the minimum word, using the .reduce() method
     return words.reduce((acc, word) => acc + word.length, 0);
 }
