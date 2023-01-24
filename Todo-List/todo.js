@@ -14,7 +14,7 @@ const container = document.querySelector('#container');
 const inputBox = document.querySelector('#input');
 const addButton = document.querySelector('#add');
 
-inputBox.addEventListener('keyup', () => {
+inputBox.addEventListener('keyup', (Event) => {
     let content = inputBox.value.trim();
     if(!content){
         alert('input Box is empty');
@@ -26,7 +26,7 @@ inputBox.addEventListener('keyup', () => {
     }
 })
 
-addButton.addEventListener('onclick', () => {
+addButton.addEventListener('click', () => {
     let content = inputBox.value.trim();
     if (!content){
         alert('input box is empty');
@@ -60,7 +60,7 @@ function appendTodo(todo) {
     deleteIcon.setAttribute('src', '/Onramp15/Todo-List/delete.png');
 
     deleteIcon.addEventListener('click', () => {
-        deleteTodo(todo.id)
+        deleteTodo(todo.id);
     })
 
     innerDiv.appendChild(subParagraph);
@@ -77,7 +77,7 @@ function addTodo(content){
         id : todos[todos.length - 1].id + 1,
         content: content,
         createdDate: new Date.toDateString()
-    }
+    };
     todos.push(newTodo);
     appendTodo(newTodo);
 }
