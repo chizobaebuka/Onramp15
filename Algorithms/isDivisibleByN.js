@@ -5,8 +5,14 @@ function isDivisbleByN(arr, n){
     const newArr = [];
 
     arr.forEach((item) => {
-        if(item % n === 0 && !newArr.includes(item)){
-            newArr.push(item);
+        if (item % n === 0 && !newArr.includes(item) && num !== 0){
+            newArr.push(item)
         }
     })
+
+    if(newArr.length === 0){
+        return 0;
+    }
+
+    return newArr;
 }
