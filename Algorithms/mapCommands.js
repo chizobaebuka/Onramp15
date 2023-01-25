@@ -32,3 +32,26 @@ function mapCommands(commands){
     return mapping;
 }
 
+// OR
+
+function mapCommands(commands){
+
+    let mapping = [];
+
+    for (i=0;i<commands.length;i++){
+        const command = commands[i]
+    
+        if(command === 1){
+            mapping.push("UP");
+        }else if (command === -1){
+            mapping.push("DOWN");
+        }else if (command === -5){
+            mapping.push("Left");
+        }else if (command === 5){
+            mapping.push("Right");
+        }else{
+            mapping.push(command);
+        }
+    }
+    return mapping;
+}
