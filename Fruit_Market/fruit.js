@@ -15,7 +15,6 @@ mangoButton.addEventListener('click', () => {
     mangoDisplay.textContent = mangoCount;
     display.textContent += MANGO_ICON;
 });
-
 orangeButton.addEventListener('click', () => {
     orangeCount += 1;
     orangeDisplay.textContent = orangeCount;
