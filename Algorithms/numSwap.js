@@ -28,3 +28,24 @@ function numSwap(number){
     }
     return parseInt(swapped);
 }
+
+// OR
+
+function numSwap(number){
+    // convert the number to string using the .toString() method
+    const numStr = number.toString();
+    // convert numStr to an array
+    const numArr = numStr.split('');
+    const chunks = [];
+    // split the numbers into pairs of 2
+    for (let i=0; i<numArr.length; i+=2){
+        // using .slice(a,b) method to return a portion of an array where a (start index) and b (end index)
+        const newChunk = numArr.slice(i, i+2);
+
+        chunks.push(newChunk);
+    }
+
+    const joinedArray = chunks.flat();
+    const str = joinedArray.join('');
+    return Number(str);
+}
