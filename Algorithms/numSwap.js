@@ -41,11 +41,14 @@ function numSwap(number){
     for (let i=0; i<numArr.length; i+=2){
         // using .slice(a,b) method to return a portion of an array where a (start index) and b (end index)
         const newChunk = numArr.slice(i, i+2);
-
+        // add the newly found newChunk to the chunks array
         chunks.push(newChunk);
     }
-
+    const swappedArr = chunks.map((item) => item.reverse);
+    // using the .flat() method to concatenate the chunks array.
     const joinedArray = chunks.flat();
+    // converting the array back to a string using the .join() method
     const str = joinedArray.join('');
+    // return the str back to a number using the Number() method
     return Number(str);
 }
