@@ -12,3 +12,14 @@ function scoreWord (word){
     }
     return sum;
 }
+
+// OR
+
+function scoreWord(word){
+    let score = 0;
+
+    for (i=0; i<word.length; i++){
+        score += letters.indexOf(word[i] + 1)
+    }
+    return score;
+}
