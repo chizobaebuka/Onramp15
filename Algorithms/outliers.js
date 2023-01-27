@@ -17,3 +17,9 @@ function outliers(integers){
     return oddArr.length === 1 ? oddArr[0] : evenArr[1];
 }
 
+// OR
+function findOutlier(integers) {
+    let evens = integers.filter(n => n % 2 === 0);
+    let odds = integers.filter(n => n % 2 !== 0);
+    return evens.length < odds.length ? evens[0] : odds[0];
+}
