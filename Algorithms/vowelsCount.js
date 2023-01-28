@@ -34,3 +34,16 @@ function vowelsCount(string){
 }
 
 vowelsCount(string);
+
+
+function vowelsCount(str){
+    let vowels = 'aeiou';
+    let count = 0;
+
+    for(let char of str){
+        if(vowels.indexOf(char) != -1){
+            return count++
+        }
+    }
+    return count;
+}
