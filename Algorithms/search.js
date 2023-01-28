@@ -3,3 +3,26 @@
 function search(arr, n){
     return arr.indexOf(n);
 }
+
+// OR
+
+function search(arr, n){
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] === n){
+            return i;
+        }
+    }
+    return -1;
+}
+
+// OR
+// given a condition where theres repetition
+function search(arr, n){
+    let indexes = [];
+    for (i=0; i<arr.length; i++){
+        if(arr[i] === n){
+            indexes.push(i);
+        }
+    }
+    return indexes;
+}
