@@ -16,3 +16,15 @@ function divisible(A){
     return count;
 
 }
+
+
+function divisible(A){
+    let count = 0;
+
+    A.forEach((item) => {
+        if(item % 2 && item > 15){
+            return count++;
+        }
+    });
+    return count;
+}
