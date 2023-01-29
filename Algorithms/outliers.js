@@ -14,8 +14,10 @@ function outliers(integers){
             oddArr.push(char)
         }
     }
-    return oddArr.length === 1 ? oddArr[0] : evenArr[1];
+    return evenArr.length < oddArr.length ? evenArr[0] : oddArr[0];
 }
+
+outliers([160, 3, 1719, 19, 11, 13, -21])
 
 // OR
 function findOutlier(integers) {
