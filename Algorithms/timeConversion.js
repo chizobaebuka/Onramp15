@@ -58,7 +58,7 @@ function timeConversion(s){
    let parts = s.split(':');
    parts[2] = parts[2].replace(/PM|AM/, "");
 
-   if(s.includes("PM") && Number(parts[0]) < 12){
+   if(s.includes("PM") && Number(parts[0]) > 12){
     parts[0] = Number(parts[0]) + 12;
    }
 
