@@ -1,4 +1,4 @@
-// Write a function isDivisibleByN that extracts all the values of an array that is divisble by n and extract all the values that are divisble by n
+// Write a function isDivisibleByN that extracts all the values of an array that is divisble by n 
 
 
 function isDivisibleByN(arr, n){
