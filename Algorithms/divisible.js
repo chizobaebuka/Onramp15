@@ -23,7 +23,7 @@ function divisible(A){
 
     A.forEach((item) => {
         if(item % 2 && item > 15){
-            return count++;
+            count++;
         }
     });
     return count;
