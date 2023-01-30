@@ -17,3 +17,8 @@ function isDivisibleByN(arr, n){
     return newArr;
 }
 
+// OR
+
+function isDivisibleByN(arr, n){
+    return arr.filter((item) => item % n === 0);
+}
