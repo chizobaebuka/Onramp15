@@ -24,7 +24,7 @@ function arraySum(arr1, arr2){
 function arraySum(arr1, arr2){
     let result = [];
     for(i=0; i<arr1.length; i++){
-        result.push(arr[i] + arr2[i % arr2.length]);
+        result.push(arr1[i] + arr2[i % arr2.length]);
     }
     return result;
 }
