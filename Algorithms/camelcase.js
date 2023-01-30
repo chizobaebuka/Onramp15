@@ -46,4 +46,5 @@ function camelCase(s){
             result++;
         }
     }
+    return result;
 }
