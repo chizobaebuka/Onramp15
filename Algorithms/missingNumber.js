@@ -27,7 +27,7 @@ function missingNumber(numArr){
 
 function missingNumber(numArr){
     let newArr = [];
-    for(let i=1; i<numArr.length; i++){
+    for(let i=1; i<=9; i++){
         if(!numArr.includes(i)){
             newArr.push(i);
         }
