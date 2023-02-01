@@ -6,7 +6,7 @@ function makeTitle(str){
     for(let i=0; i<splitted.length; i++){
         let char = splitted[i];
         let upper, cut, combined;
-        upper = char[0].toLowerCase();
+        upper = char[0].toUpperCase();
         cut = char.slice(1);
         combined = upper + cut;
         res += combined + " ";
