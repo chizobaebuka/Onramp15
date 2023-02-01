@@ -19,6 +19,17 @@ function allSum (words, min){
 }
 
 // OR
+function allSum(words, min){
+    let sum = 0;
+    words.forEach((word) => {
+        if(word.length > min){
+            sum += word.length;
+        }
+    });
+    return sum;
+}
+
+// OR
 
 function allSum(words, min) {
     // if the length of the words is less than min, return 0
