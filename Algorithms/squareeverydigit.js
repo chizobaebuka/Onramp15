@@ -20,3 +20,13 @@ function squareDigits(num){
 }
 
 squareDigits(num);
+
+function squardigit(int){
+    let num = int.toString();
+    let res = '';
+
+    num.forEach((item) => {
+        res += Math.pow(item, 2);
+    });
+    return parseInt(res);
+}
