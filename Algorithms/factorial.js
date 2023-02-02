@@ -8,3 +8,13 @@ function factorial(n) {
 }
 
 factorial(n);
+
+// OR
+
+function factorial (n){
+   if (num === 0 || num === 1){
+      return 1;
+   }else{
+      return num * factorial(n-1);
+   }
+}
