@@ -23,3 +23,15 @@ function scoreWord(word){
     }
     return score;
 }
+
+// OR
+
+function scoreWord(word){
+    let arr = word.split("");
+    let sum = 0;
+    for (i=0; i< arr.length; i++){
+        sum += arr[i].charCharAt()-96;
+    }
+    return sum;
+}
+
