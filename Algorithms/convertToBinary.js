@@ -9,3 +9,8 @@ function convertToBinary(num){
     }
     return result;
 }
+
+// OR
+function convertToBinary(num){
+    return (num >>> 0).toString(2);
+}
