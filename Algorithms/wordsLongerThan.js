@@ -12,3 +12,15 @@ function wordsLongerThan(words, length){
     }
     return longWords;            
 }
+
+function wordsLongerThan(words, length){
+    let longWords = [];
+
+    words.forEach((word) =>{
+        if(word.length > length){
+            longWords.push(word);
+        }
+    });
+
+    return longWords;
+}
