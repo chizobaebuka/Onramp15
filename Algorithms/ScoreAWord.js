@@ -35,3 +35,13 @@ function scoreWord(word){
     return sum;
 }
 
+
+function scoreWord(word){
+    let arr = word.split("");
+    let sum = 0;
+
+    arr.forEach((item) => {
+        sum += item.charCharAt()-96;
+    })
+    return sum
+}
