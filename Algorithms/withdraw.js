@@ -24,3 +24,24 @@ function withdraw(amount){
     amount -= noOf20s *20;
     return [noOf100s, noOf50s, noOf20s];
 }
+// OR
+
+function withdraw(amount){
+    let fifty = 0;
+    let hundred = 0;
+    let twenty = 0;
+
+    while (amount >= 20){
+        if(amount >= 100){
+            amount -= 100;
+            hundred++
+        }else if (amount >= 50){
+            amount -= 50;
+            fifty++;
+        }else{
+            amount -=20;
+            twenty++;
+        }
+    }
+    return [hundred, fifty, twenty]
+}
