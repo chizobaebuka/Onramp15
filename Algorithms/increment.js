@@ -13,3 +13,13 @@ function increment(arr, value){
     });
     return mapped;
 }
+
+// OR 
+function increment(arr, value){
+    let res = [];
+    for(let i=0; i<arr.length; i++){
+        let char = arr[i];
+        res.push({val: char.val + value})
+    }
+    return res;
+}
