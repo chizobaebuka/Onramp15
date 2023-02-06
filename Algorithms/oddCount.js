@@ -17,3 +17,15 @@ function oddCount(n){
         return newN;
     }
 }
+
+//OR
+
+function oddCOunt(n){
+    let odd = [];
+    for (let i=n-1; i>0; i--){
+        if(i%2 !== 0){
+            odd.push(i);
+        }
+    }
+    return odd;
+}
