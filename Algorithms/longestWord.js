@@ -5,13 +5,13 @@
 // Your response should be a number
 
 function longestWord(sentence){
-    let count = 0;
+    let longest = 0;
     words = sentence.split('');
 
     words.forEach((word) => {
-        if (word.length > count) {
-            count = word.length;
+        if (word.length > longest) {
+            longest = word.length;
         }
     });
-    return count
+    return longest
 }
