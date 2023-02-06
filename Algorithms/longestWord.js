@@ -10,7 +10,7 @@ function longestWord(sentence){
 
     words.forEach((word) => {
         if (word.length > count) {
-            return count = word.length;
+            count = word.length;
         }
     });
     return count
