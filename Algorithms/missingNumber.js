@@ -32,11 +32,11 @@ function missingNumber(numArr){
             newArr.push(i);
         }
     }
-    if(newArr === 0){
+    if(newArr.length === 0){
         return false;
-    }else if (newArr === 1){
+    }else if (newArr.length === 1){
         return newArr[0];
     } else{
-        return newArr.sort((a,b) => a + b);
+        return newArr.sort((a,b) => a - b);
     }
 }   
