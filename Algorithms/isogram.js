@@ -27,3 +27,19 @@ function isogram(str){
     }
     return true
 }
+
+// OR
+function isogram(word){
+    let str = word.toLowerCase;
+    let unique = new Set(str);
+    let result = Array.from(unique);
+
+    let initialLength = word.length
+    let uniqueLength = result.length
+    
+    if(initialLength === uniqueLength){
+        return true
+    }else{
+        return false
+    }
+}
