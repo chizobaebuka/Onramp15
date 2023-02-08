@@ -10,8 +10,8 @@
 
 function fib(steps){
     let fibNum = [0, 1];
-    for (i=0; i< steps; i++){
-        fibNum.push(fibNum[i] + fibNum[i+1])
+    for (i=2; i<=steps; i++){
+        fibNum.push(fibNum[i-1] + fibNum[i-2])
     }
-    return fibNum[i];
+    return fibNum[steps];
 }
