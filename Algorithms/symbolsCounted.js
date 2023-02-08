@@ -8,14 +8,19 @@ function symbol(str){
     let result = "";
 
     for (let i=0; i<str.length;i++){
-        charCount[str[i]] = ++charCount[str[i]] || 1;
+        let char = str[i]
+        charCount[char] = charCount[char] + 1 || 2;
     }
     
-    for (let key in charCount){
-        if (charCount[key] === 1){
-            charCount[key] = "";
+    for(i=0; i<str.length; i++){
+        let char = str[i];
+
+        if(charCount[char] !== charCount[str[i - 1]]){
+            result += char + charCount[char];
+            charCount[char]=1;
+        }else{
+            result += char
         }
-        result += key + charCount[key];
     }
 
     return result;
