@@ -18,11 +18,21 @@ function multiplyNums(nums){
 // OR
 
 function multiplyNums(nums){
-    split = nums.split(",");
-    let sum = 1;
-    for(let i=0; i<split.length; i++){
+    arr = nums.split(",");
+    let mul = 1;
+    for(let i=0; i<arr.length; i++){
         let char = split[i];
-        sum *= Number(char);
+        mul *= Number(char);
     }
-    return sum;
+    return mul;
+}
+
+function multiply (nums){
+    let arr = nums.split("");
+    let product = 1;
+
+    arr.forEach((item) => {
+        product *= Number(item);
+    })
+    return product;
 }
