@@ -14,11 +14,7 @@ function countUnique(arr){
             obj[char] ++;
         }else{
             obj[char] = 1
-        }
-    }
-    for(let key in obj){
-        if(obj[char] === 1){
-            count++;
+            count++
         }
     }
     return count;
