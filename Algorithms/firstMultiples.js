@@ -9,7 +9,7 @@ function firstMultiplesOf(noOfMultiples, number, divisor){
     }
 
     for(let i =0; i <= noOfMultiples; i++){
-        let multiple = number * divisor * i;
+        let multiple = number * (divisor * (i + 1));
         multiples.push(multiple);
     }
     return multiples;
