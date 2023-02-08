@@ -19,3 +19,11 @@ function removeNumbers(str) {
     }
     return { removedNumbers, newStr };
 }
+
+// OR
+function removeNumbers(str){
+    let removed = str.match(/\d+/g) || [];
+    let cleaned = str.replace(/\d+/g, "");
+
+    return {removedNumbers: removed, string: cleaned}
+}
