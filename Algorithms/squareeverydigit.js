@@ -22,11 +22,11 @@ function squareDigits(num){
 squareDigits(num);
 
 function squardigit(int){
-    let num = int.toString();
+    let num = int.toString().split("");
     let res = '';
 
     num.forEach((item) => {
-        res += Math.pow(item, 2);
+        res += Math.pow(parseInt(item), 2);
     });
-    return parseInt(res);
+    return parseInt(res.toString());
 }
