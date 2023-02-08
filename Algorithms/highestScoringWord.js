@@ -2,10 +2,12 @@
 let sentence = "I am wonderfully and fearfully made"
 
 function scoreWord(word){
+    let letters = "abcdefghijklmnopqrstuvwxyz"
+    let arr = word.split("");
     let score = 0;
 
-    for (i=0; i<word.length; i++){
-        score += letters.indexOf(word[i] + 1)
+    for (let i=0; i<arr.length; i++){
+        score += letters.indexOf(word[i] + 1);
     }
     return score;
 }
