@@ -30,7 +30,7 @@ function scoreWord(word){
     let arr = word.split("");
     let sum = 0;
     for (i=0; i< arr.length; i++){
-        sum += arr[i].charCharAt()-96;
+        sum += arr[i].charCodeAt()-96;
     }
     return sum;
 }
@@ -41,7 +41,7 @@ function scoreWord(word){
     let sum = 0;
 
     arr.forEach((item) => {
-        sum += item.charCharAt()-96;
+        sum += item.charCodeAt()-96;
     })
     return sum
 }
