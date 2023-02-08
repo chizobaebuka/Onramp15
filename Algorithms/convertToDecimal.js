@@ -6,3 +6,8 @@ function convertToDecimal(binary){
     }
     return result;
 }
+
+// OR
+function convertToDecimal(binary){
+    return parseInt(binary, 2);
+}
